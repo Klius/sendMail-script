@@ -14,6 +14,7 @@ class Mail(object):
         self.msg['Subject'] = subject
         self.msg['From'] = fromAddress
         self.msg['To'] = toAddress
+        self.msg["Date"] = formatdate(localtime=True)
 
     def composePlainBody(self, body):
         self.msg.attach(MIMEText(body, 'plain', 'utf-8'))
