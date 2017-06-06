@@ -4,6 +4,7 @@ import codecs
 from os.path import basename
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.Utils import formatdate
 
 class Mail(object):
 
